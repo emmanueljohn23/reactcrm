@@ -3,6 +3,7 @@ import LeftArrow from '../assets/icons/leftArrow.svg'
 
 
 const AddNewProduct = () => {
+  
     return (
         <CommonPageWrap>
           <div className="cus_div">
