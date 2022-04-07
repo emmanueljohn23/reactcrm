@@ -24,4 +24,4 @@ const CommonPageWrap = (props) => {
   )
 }
 
-export default CommonPageWrap;
+export default CommonPageWrap

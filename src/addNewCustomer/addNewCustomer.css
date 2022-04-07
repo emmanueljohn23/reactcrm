@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cus_span {
+    
+    padding: 100px 80px 25px;
+    color: #757575;
+}
+body {
+    position: absolute;
+    background-color: #EFEFEF;
+}
+.add_Customer {
+    background-color: #FFFFFF;
+    width: 1200px;
+    padding: 10px 20px 0px 10px;
+    margin-left: 0px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.add_Customer h3 {
+    border-bottom:1px solid #E0E0E0;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.cus_form {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 35px; */
+    padding-top: 20px;
+}
+
+input {
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 18px 14px;
+    border: 1px solid #909090;
+    width: 340px;
+    height: 55px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+.cus_btn {
+    width: 200px;
+    margin-top: 130px;
+    margin-left: 980px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_back {
+    background-color: #EAEAEA;
+    border-radius: 4px;
+    border: none;
+    height: 36px;
+    width: 95px;float: right;
+    font-size: 18px;
+}
+
+.btn_save {
+    background-color: #303F9F;
+    border-radius: 4px;
+    color: white;
+    height: 36px;
+    width: 95px;
+    border: none;
+    float: right;
+    font-size: 18px;
+}
+.btn_span {
+    display: flex;
+    align-items: center;
+}
+.lftArrImg {
+    position: relative;
+    margin-left: 3px;
+    height: 35px;
+    width: 35px;
+}

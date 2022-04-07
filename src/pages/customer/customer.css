@@ -3,23 +3,35 @@
     margin:0;
     padding:0;
 }
-
+body {
+    background-color: #EFEFEF;
+}
+.cus_div {
+    background-color: white;
+    width: 1200px;
+    margin-left: 35px;
+    margin-top: 40px;
+}
 
 th,td {
     border-bottom: 1px solid rgb(224,224,224,1);
-    
+
     text-align: center;
-    padding:10px
+    padding:20px 20px 10px 10px;
+}
+td {
+    width: 700px;
 }
 
 table{
-    width:80%;
-    margin-left: 200px;
+    
+    margin-left: 40px;
     
 
 }
 
-h2{
-    margin-left: 200px;
+.cus_head {
+    margin-left: 40px;
+    padding: 20px;
     border-bottom: 1px solid rgb(224,224,224,1);
 }
