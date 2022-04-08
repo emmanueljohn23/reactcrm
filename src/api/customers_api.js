@@ -47,16 +47,16 @@ export function PostData (payload = {}) {
         console.log(res.data)
       })
       .catch((err) => {
-        console.log(err)
+        // console.log(err)
       })
   }
 
-  export function del(payload={}) {
-    let id = payload
-    axios
-      .delete(`http://localhost:3005/Customers/${id}`,payload,{
-          headers: {'Content-Type': 'application/json'},
-      })
+  // export function del(payload={}) {
+  //   let id = payload
+  //   axios
+  //     .delete(`http://localhost:3005/Customers/${id}`,payload,{
+  //         headers: {'Content-Type': 'application/json'},
+  //     })
       .then((res) => {
         console.log(res.data)
       })
