@@ -7,12 +7,14 @@ import Product from '../pages/product/product'
 import AddNewCustomer from '../addNewCustomer/addNewCustomer'
 import AddNewOrder from './../addNewOrder/addNewOrder';
 import AddNewProduct from '../addNewProduct/addNewProduct'
+import Login from '../pages/loginPage/loginPage'
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DashBoard />}></Route>
+      <Route path="/" element={<Login />}></Route>
+        <Route path="/dashBoard" element={<DashBoard />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="customer" element={<Customer />}></Route>
         <Route path="order" element={<Order />}></Route>

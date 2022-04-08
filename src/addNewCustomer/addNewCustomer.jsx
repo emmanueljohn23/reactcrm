@@ -3,19 +3,34 @@ import './addNewCustomer.css'
 import LeftArrow from '../assets/icons/leftArrow.svg'
 import { useState } from 'react';
 import Router from '../router/router';
+import {PostData} from '../api/customers_api'
 
 const AddNewCustomer = (props) => {
 
-  const [cusValue,setCusVal] = useState();
+  const [cusValue,setCusVal] = useState(
+    [
+      {
+        id: '',
+        FirstName: '',
+        LastName: '',
+        Email: '',
+        Mobile:""
+      },
+    ],
+  );
+  const [myval, setval] = useState()
 
   const cusOnCng = (e) => {
     let cusName = e.target.name;
     let cusVal = e.target.value;
-    setCusVal({...cusValue,[cusName]:cusVal});
+    setval({...myval,[cusName]:cusVal});
   }
   const save_cus_val = () => {
-    console.log(cusValue)
-    // props.cusMethod(cusValue);
+    let cusState = [...cusValue];
+    cusState.push(myval);
+    PostData(myval)
+    setCusVal(myval)
+    // console.log(cusValue)
   }
 
   return (

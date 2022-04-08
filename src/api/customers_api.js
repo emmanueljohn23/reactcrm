@@ -16,3 +16,53 @@ export async function getUser(){
 
     return user;
 }
+
+
+// export async function Orderlist(){
+//     let order;
+//     await (axios.get(`http://localhost:3005/Order`))
+//     .then((res) =>{
+//         order=res.data;
+//     }
+
+//     )
+
+//     .catch((err) =>
+//         console.log(err)
+//     )
+
+//     return order;
+// }
+
+export function PostData (payload = {}) {
+    if (!payload) return null
+  
+    if(!payload.id) payload.id = ''
+  
+    axios.post('http://localhost:3005/Customers', payload, {
+        headers: { 'Content-Type': 'application/json' },
+      }
+      )
+      .then((res) => {
+        console.log(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+
+  export function del(payload={}) {
+    let id = payload
+    axios
+      .delete(`http://localhost:3005/Customers/${id}`,payload,{
+          headers: {'Content-Type': 'application/json'},
+      })
+      .then((res) => {
+        console.log(res.data)
+      })
+      .catch((err) => {
+        // console.log(err)
+      })
+
+  }
+  
