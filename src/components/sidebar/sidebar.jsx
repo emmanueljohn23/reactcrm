@@ -26,7 +26,7 @@ const SideBar = () => {
         ></img>
       </div>
       <div>
-        <Link className="sidebar__link" to="/">
+        <Link className="sidebar__link" to="/dashBoard">
           <img
             className="sidebar__link-menu"
             src={DashBoardMenu}
@@ -66,22 +66,7 @@ const SideBar = () => {
           />
           <span>About</span>
           </Link>
-          <Link className="sidebar__link" to="/addNewCus">
-          <img
-            className="sidebar__link-menu"
-            src={AboutMenu}
-            alt="dashboard-menu"
-          />
-          <span>NC</span>
-          </Link>
-          <Link className="sidebar__link" to="/addNewOrd">
-          <img
-            className="sidebar__link-menu"
-            src={AboutMenu}
-            alt="dashboard-menu"
-          />
-          <span>NO</span>
-          </Link>
+
           <Link className="sidebar__link" to="/addNewPdt">
           <img
             className="sidebar__link-menu"

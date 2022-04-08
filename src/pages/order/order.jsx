@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Orderlist } from '../../api/orders_api'
-
+import Search from '../../assets/icons/search.svg'
+import Add from '../../assets/icons/addIcon.svg'
 import CommonPageWrap from '../../containers/commonPageWrap/commonPageWrap'
+import { useNavigate } from 'react-router-dom'
 
 const Order = () => {
+  const navigate = useNavigate();
   const [orders, setOrders] = useState([])
 
   useEffect(() => {
@@ -14,6 +17,9 @@ const Order = () => {
       .catch((err) => console.log(err))
   }, [])
 
+  const search_main = () => {
+    navigate('/addNewCus')
+  }
   return (
     <div>
       <CommonPageWrap>
@@ -52,6 +58,10 @@ const Order = () => {
             })}
           </tbody>
         </table>
+        <div className='icon_main'>
+              <img className='search_main' src={Search} alt='search'></img>
+              <img className='add_main' onClick={search_main} src={Add} alt='add'></img>
+        </div>
         </div>
       </CommonPageWrap>
     </div>

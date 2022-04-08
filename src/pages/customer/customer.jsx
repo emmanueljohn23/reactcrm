@@ -5,17 +5,16 @@ import { PostData, getUser, del } from '../../api/customers_api'
 import './customer.css'
 import Edit from '../../assets/icons/Edit.svg'
 import Delete from '../../assets/icons/Delete.svg'
+import Search from '../../assets/icons/search.svg'
+import Add from '../../assets/icons/addIcon.svg'
+import { useNavigate } from 'react-router-dom';
+
+
+
+
 const Customer = () => {
-  const [customers, setCustomers] = useState([
-    {
-      FirstName: 'k',
-      LastName: 23,
-    },
-    {
-      FirstName: 'k',
-      LastName: 23,
-    },
-  ])
+  const navigate = useNavigate();
+  const [customers, setCustomers] = useState([])
 
   useEffect(() => {
     getUser()
@@ -28,11 +27,19 @@ const Customer = () => {
   const cusDelete = (e) => {
     let cusId = e.target.id
     // setCustomers((customers)=>customers.filter((value,i)=> i!=cusId))
-    // customers.filter((value,i)=> i!=cusId)
     del(cusId)
     getUser()
-    // console.log(customers)
+    console.log(cusId)
   }
+
+  const add_main = () => {
+    navigate('/addNewCus')
+  }
+
+    const editCus = () => {
+      navigate('/editCus')
+    }
+
   return (
     <div>
       <CommonPageWrap>
@@ -54,13 +61,13 @@ const Customer = () => {
               {customers.map((item, id) => {
                 return (
                   <tr key={id}>
-                    <td>{item.FirstName}</td>
-                    <td>{item.LastName}</td>
-                    <td>{item.Email}</td>
-                    <td>{item.Mobile}</td>
-                    <td>{item.Membership}</td>
+                    <td>{item.fname}</td>
+                    <td>{item.lname}</td>
+                    <td>{item.email}</td>
+                    <td>{item.mobile}</td>
+                    <td>{item.reward}</td>
                     <td className="edt_del">
-                      <img className="edt_icon" src={Edit} alt="edit"></img>
+                      <img className="edt_icon" onClick={editCus} src={Edit} alt="edit"></img>
                       <img
                         className="del_icon"
                         id={id}
@@ -74,6 +81,10 @@ const Customer = () => {
               })}
             </tbody>
           </table>
+          <div className='icon_main'>
+              <img className='search_main' src={Search} alt='search'></img>
+              <img className='add_main' onClick={add_main} src={Add} alt='add'></img>
+        </div>
         </div>
       </CommonPageWrap>
     </div>

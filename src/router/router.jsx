@@ -8,6 +8,7 @@ import AddNewCustomer from '../addNewCustomer/addNewCustomer'
 import AddNewOrder from './../addNewOrder/addNewOrder';
 import AddNewProduct from '../addNewProduct/addNewProduct'
 import Login from '../pages/loginPage/loginPage'
+import EditCustomer from '../editCustomer/editCustomer'
 
 const Router = () => {
   return (
@@ -22,6 +23,7 @@ const Router = () => {
         <Route path="addNewCus" element={<AddNewCustomer />}></Route>
         <Route path="addNewOrd" element={<AddNewOrder />}></Route>
         <Route path="addNewPdt" element={<AddNewProduct />}></Route>
+        <Route path="editCus" element={<EditCustomer />}></Route>
       </Routes>
     </BrowserRouter>
   )

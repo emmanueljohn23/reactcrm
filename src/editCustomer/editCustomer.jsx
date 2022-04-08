@@ -1,17 +1,24 @@
 import CommonPageWrap from '../containers/commonPageWrap/commonPageWrap'
-import './addNewCustomer.css'
+// import './addNewCustomer.css'
 import LeftArrow from '../assets/icons/leftArrow.svg'
 import { useState } from 'react';
 import Router from '../router/router';
 import {PostData} from '../api/customers_api'
 
-const AddNewCustomer = (props) => {
+const EditCustomer = (props) => {
 
   const [cusValue,setCusVal] = useState(
     [
-    ]
+      {
+        id: '',
+        FirstName: '',
+        LastName: '',
+        Email: '',
+        Mobile:""
+      },
+    ],
   );
-  const [myval, setval] = useState([])
+  const [myval, setval] = useState()
 
   const cusOnCng = (e) => {
     let cusName = e.target.name;
@@ -30,7 +37,7 @@ const AddNewCustomer = (props) => {
     <div>
       <CommonPageWrap>
         <div className="cus_div">
-          <span className="cus_span">Application / Customer</span>
+          <span className="cus_span"></span>
           <div className="add_Customer">
             <h3>Customer</h3>
             <form className="cus_form">
@@ -52,4 +59,4 @@ const AddNewCustomer = (props) => {
     </div>
   )
 }
-export default AddNewCustomer
+export default EditCustomer;

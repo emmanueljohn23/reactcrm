@@ -1,0 +1,302 @@
+{
+  "Customers": [
+    {
+      "fname": "qqqw",
+      "lname": "www",
+      "id": 3
+    },
+    {
+      "lname": "q",
+      "id": 4
+    },
+    {
+      "fname": "gdggd",
+      "lname": "wqewq",
+      "id": 5
+    },
+    {
+      "fname": "jabs",
+      "lname": "asda",
+      "reward": "34",
+      "email": "abc@gmail.com",
+      "mobile": "154545487",
+      "id": 6
+    }
+  ],
+  "Order": [
+    {
+      "id": 1,
+      "Reference": "order-2-2-1-2",
+      "Quantity": 2,
+      "Amount": 9.99,
+      "Customer": "Larsen",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 2,
+      "Reference": "order-4-3-1-2",
+      "Quantity": 2,
+      "Amount": 5.99,
+      "Customer": "Rosseta",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 3,
+      "Reference": "order-4-4-1-2",
+      "Quantity": 2,
+      "Amount": 499.99,
+      "Customer": "Rosseta",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 4,
+      "Reference": "order-5-5-1-2",
+      "Quantity": 1,
+      "Amount": 399.99,
+      "Customer": "William",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 5,
+      "Reference": "order-6-6-1-2",
+      "Quantity": 1,
+      "Amount": 329.99,
+      "Customer": "Sarah",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 6,
+      "Reference": "order-8-8-1-2",
+      "Quantity": 1,
+      "Amount": 89.99,
+      "Customer": "Merriana",
+      "OrderDate": "2017-01-12",
+      "ShippingDate": "2017-01-10"
+    },
+    {
+      "id": 7,
+      "Reference": "order-9-9-1-2",
+      "Quantity": 1,
+      "Amount": 59.99,
+      "Customer": "Jubino",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 8,
+      "Reference": "order-10-10-1-2",
+      "Quantity": 1,
+      "Amount": 49.99,
+      "Customer": "Geneva",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 9,
+      "Reference": "order-2-12-1-2",
+      "Quantity": 1,
+      "Amount": 49.99,
+      "Customer": "Larsen",
+      "OrderDate": "2017-01-01",
+      "ShippingDate": "2017-01-01"
+    },
+    {
+      "id": 10,
+      "Reference": "order-2-14-1-2",
+      "Quantity": 1,
+      "Amount": 19.99,
+      "Customer": "Rosseta",
+      "OrderDate": "2017-01-09",
+      "ShippingDate": "2017-01-01"
+    }
+  ],
+  "Product": [
+    {
+      "id": 1,
+      "Product Name": "Product HHYDP",
+      "Category Name": "Beverages",
+      "Price": "18",
+      "TotalinStock": "23"
+    },
+    {
+      "id": 2,
+      "Product Name": "Product RECZE",
+      "Category Name": "Beverages",
+      "Price": "19",
+      "Total in Stock": "10"
+    },
+    {
+      "id": 3,
+      "Product Name": "Product IMEHJ",
+      "Category Name": "Condiments",
+      "Price": "10",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 4,
+      "Product Name": "Product KSBRM",
+      "Category Name": "Condiments",
+      "Price": "22",
+      "Total in Stock": "2"
+    },
+    {
+      "id": 5,
+      "Product Name": "Product EPEIM",
+      "Category Name": "Condiments",
+      "Price": "21.5",
+      "Total in Stock": "333"
+    },
+    {
+      "id": 6,
+      "Product Name": "Product EPEIM",
+      "Category Name": "Condiments",
+      "Price": "21.5",
+      "Total in Stock": "333"
+    },
+    {
+      "id": 7,
+      "Product Name": "Product VAIIV",
+      "Category Name": "Condiments",
+      "Price": "25",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 8,
+      "Product Name": "Product HMLNI",
+      "Category Name": "Produce",
+      "Price": "30",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 9,
+      "Product Name": "Product WVJFP",
+      "Category Name": "Condiments",
+      "Price": "40",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 10,
+      "Product Name": "Product AOZBW",
+      "Category Name": "Meat/Poultry",
+      "Price": "97",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 11,
+      "Product Name": "Product YHXGE",
+      "Category Name": "Seafood",
+      "Price": "31",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 12,
+      "Product Name": "Product QMVUN",
+      "Category Name": "Dairy Products",
+      "Price": "21",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 13,
+      "Product Name": "Product OSFNS",
+      "Category Name": "Dairy Products",
+      "Price": "38",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 14,
+      "Product Name": "Product POXFU",
+      "Category Name": "Seafood",
+      "Price": "6",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 15,
+      "Product Name": "Product PWCJB",
+      "Category Name": "Produce",
+      "Price": "23.5",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 16,
+      "Product Name": "Product KSZOI",
+      "Category Name": "Condiments",
+      "Price": "15.5",
+      "Total in Stock": "33"
+    },
+    {
+      "id": 17,
+      "Product Name": "Product PAFRH",
+      "Category Name": "Confections",
+      "Price": "17.5",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 18,
+      "Product Name": "Product BLCAX",
+      "Category Name": "Meat/Poultry",
+      "Price": "39",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 19,
+      "Product Name": "Product CKEDC",
+      "Category Name": "Seafood",
+      "Price": "62.5",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 20,
+      "Product Name": "Product XKXDO",
+      "Category Name": "Confections",
+      "Price": "9.2",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 21,
+      "Product Name": "Product QHFFP",
+      "Category Name": "Confections",
+      "Price": "81",
+      "Total in Stock": "23"
+    },
+    {
+      "id": 22,
+      "Product Name": "Product VJZZH",
+      "Category Name": "Confections",
+      "Price": "18",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 23,
+      "Product Name": "Product CPHFY",
+      "Category Name": "Grains/Cereals",
+      "Price": "21",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 24,
+      "Product Name": "Product QOGNU",
+      "Category Name": "Condiments",
+      "Price": "4.5",
+      "Total in Stock": "0"
+    },
+    {
+      "id": 25,
+      "Product Name": "Product ABCD",
+      "Category Name": "Confections",
+      "Price": "222",
+      "Total in Stock": "23"
+    },
+    {
+      "id": 26,
+      "Product Name": "Product asdasd",
+      "Category Name": "Confections",
+      "Price": "234",
+      "Total in Stock": "22"
+    }
+  ]
+}

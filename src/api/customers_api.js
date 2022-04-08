@@ -35,9 +35,6 @@ export async function getUser(){
 // }
 
 export function PostData (payload = {}) {
-    if (!payload) return null
-  
-    if(!payload.id) payload.id = ''
   
     axios.post('http://localhost:3005/Customers', payload, {
         headers: { 'Content-Type': 'application/json' },
@@ -51,12 +48,12 @@ export function PostData (payload = {}) {
       })
   }
 
-  // export function del(payload={}) {
-  //   let id = payload
-  //   axios
-  //     .delete(`http://localhost:3005/Customers/${id}`,payload,{
-  //         headers: {'Content-Type': 'application/json'},
-  //     })
+  export function del(payload={}) {
+    let id = payload
+    axios
+      .delete(`http://localhost:3005/Customers/${id}`,payload,{
+          headers: {'Content-Type': 'application/json'},
+      })
       .then((res) => {
         console.log(res.data)
       })
