@@ -30,9 +30,8 @@ const Customer = () => {
     // setCustomers((customers)=>customers.filter((value,i)=> i!=cusId))
     // customers.filter((value,i)=> i!=cusId)
     del(cusId)
-    getUser();
+    getUser()
     // console.log(customers)
-    console.log(cusId)
   }
   return (
     <div>
